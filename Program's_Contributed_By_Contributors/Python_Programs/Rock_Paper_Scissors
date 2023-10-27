@@ -1,0 +1,22 @@
+import random
+
+# Create a list of possible plays
+plays = ["Rock", "Paper", "Scissors"]
+
+# Get the player's play
+player_play = input("Enter your play (rock, paper, or scissors): ")
+
+# Get the computer's play
+computer_play = random.choice(plays)
+
+# Determine the winner
+if player_play == computer_play:
+    print("It's a tie!")
+elif player_play == "Rock" and computer_play == "Scissors":
+    print("You win!")
+elif player_play == "Paper" and computer_play == "Rock":
+    print("You win!")
+elif player_play == "Scissors" and computer_play == "Paper":
+    print("You win!")
+else:
+    print("Computer wins!")
